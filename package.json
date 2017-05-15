@@ -1,0 +1,29 @@
+{
+  "name": "javascript-starter-kit",
+  "version": "1.0.0",
+  "description": "Javascript strter kit",
+  "scripts": {
+    "prestart": "node buildScripts/srcMessage.js",
+    "start" : "node-run-all --parallel security-check open:src",
+    "open:src" :"node buildScripts/srcServer.js",
+    "share":"lt --port 3000",
+    "security-check" : "nsp check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeeruVerma-Nagarro/javascript-starter-kit.git"
+  },
+  "author": "'Neeru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeeruVerma-Nagarro/javascript-starter-kit/issues"
+  },
+  "homepage": "https://github.com/NeeruVerma-Nagarro/javascript-starter-kit#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "express": "^4.15.2",
+    "open": "0.0.5",
+    "path": "^0.12.7"
+  }
+}
